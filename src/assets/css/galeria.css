@@ -1,0 +1,73 @@
+.galeria {
+  display: grid;
+  gap: 10px;
+  background-color: #d4d6f8;
+}
+
+.grid-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.galeria .foto {
+  cursor: pointer;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  color: rgba(221, 218, 218, 0.822);
+  text-align: left;
+  text-shadow: 0px 0px 15px black;
+}
+
+.galeria .foto:hover {
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+.galeria .foto svg {
+  align-self: flex-end;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+/* Estilos para la galería como una grilla */
+.galeria {
+  display: grid; /* Usar CSS Grid */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Las columnas se ajustan automáticamente y tienen un ancho mínimo de 200px */
+  gap: 10px; /* Espacio entre las celdas */
+}
+
+/* Estilos para cada imagen en la grilla */
+.imagen-container {
+  position: relative; /* Permitir posicionar elementos internos (como el botón de corazón) */
+}
+
+.imagen {
+  width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Mantener la proporción de aspecto */
+}
+
+/* Estilo de corazón normal (transparente) */
+.corazon {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+/* Estilo de corazón favorito (rojo) */
+.corazon.favorito {
+  color: red;
+}
+
+body{
+  background-color: #d4d6f8;
+}
